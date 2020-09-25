@@ -14,7 +14,8 @@ h1, h2, h3, p, form {
 }
 
 img { 
-  border: none; 
+  border: none;
+  margin: 15px;
 }
 
 .contenedor {
@@ -28,8 +29,12 @@ img {
   border: 2px solid #777;
 }
 
+.buscador {
+    padding-top: 8px;
+}
+
 .cabecera { 
-  clear: both; 
+  clear: both;
 }
 
 .menu { 
@@ -44,6 +49,14 @@ img {
 .contenido { 
   float: right; 
   width: 78%; 
+}
+
+.lateral, .contenido, .pie {
+  margin-top: 10px;
+}
+
+.cabecera, .menu, .lateral, .principal, .secundario, .pie {
+  padding: 5px 0 5px 0;
 }
 
 .contenido .principal { 
