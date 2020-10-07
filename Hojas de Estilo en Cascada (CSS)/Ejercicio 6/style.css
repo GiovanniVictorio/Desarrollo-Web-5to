@@ -1,7 +1,20 @@
 ul, ul li { 
   margin: 0; 
-  padding: 2px 5px 2px 5px;
+  padding: 0;
   list-style: none;
+}
+
+.menu ul li{
+  padding: 5px 5px 5px 5px;
+}
+
+.noticias p span {
+  color: grey;
+  padding-top: 10px;
+}
+
+.noticias p {
+  padding-top: 5px;
 }
 
 .menu_principal li a {
@@ -63,7 +76,7 @@ img {
 
 .secundario h2 {
   padding: 5px;
-  background-color: #FFB533;
+  background-color: #DE9E63;
 }
 
 .principal, .articulo {
@@ -72,7 +85,7 @@ img {
 
 .publicidad {
   border: 2px dotted #FFD283;
-  background-color: #FFE1AD; 
+  background-color: #FFF7CE; 
   padding: 10px;
 }
 
@@ -82,12 +95,17 @@ img {
 
 .lateral .noticias {
   border: 2px solid #9CC8C4;
-  background-color: #F0F0F0;
+  background-color: #F7F7F7;
   padding: 10px;
 }
 
 .menu {
+  border: 3px solid #9CC8C4;
   background-color: #00549B;
+}
+
+.noticias h3 a {
+  font: bold 80% sans-serif;
 }
 
 .logo h1 {
