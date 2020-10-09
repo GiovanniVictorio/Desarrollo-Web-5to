@@ -1,0 +1,14 @@
+.div-content a:visited {
+	color: grey;
+}
+
+.div-content a {
+	display: block;
+	margin-bottom: 1em;
+	color: red;
+}
+
+.div-content a:hover {
+	color: white;
+	background-color: red;
+}
