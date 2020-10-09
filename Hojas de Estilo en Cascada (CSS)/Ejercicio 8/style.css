@@ -1,0 +1,15 @@
+ul li {
+	list-style: none;
+	list-style-position: inside;
+	list-style-image: url(img/icon.png);
+	border: 1px solid black;
+	width: 20%;
+}
+ul li a {
+	color: black;
+	padding: 3.1px;
+	text-decoration: none;
+}
+ul li:hover {
+	background-color: grey;
+}
