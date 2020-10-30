@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alert</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		
+		var cadena = prompt("Ingrese una frase:")
+
+		function palabra(c) {
+
+			if ( c == c.toUpperCase() ) {
+				return "La cadena "+ c + " está formada por puras letras MAYÚSCULAS"
+			} else if ( c == c.toLowerCase() ) {
+				return "La cadena "+ c + " está formada por puras letras minusculas"
+			} else {
+				return "La cadena "+ c + " está formada por letras minusculas y MAYÚSCULAS"
+			}
+		}
+
+		alert( palabra(cadena) )
+	</script>
+</body>
+</html>
