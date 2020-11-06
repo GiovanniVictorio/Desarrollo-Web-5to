@@ -9,43 +9,23 @@
             }
         </style>
         <script type="text/javascript">
-            function muestraOculta(elemento) {
+            function muestraOculta(elemento,id_parrafo) {
                 var contenido = elemento.innerHTML;
 
                 if ( contenido == "Ocultar contenidos" ) {
 
                     elemento.innerHTML = "Mostrar contenidos";
 
-                    if ( elemento.id == "enlace_1" ){
-                        var contenido = document.getElementById('contenidos_1');
-                        contenido.className += "oculto";
-                    }
-                    if ( elemento.id == "enlace_2" ){
-                        var contenido = document.getElementById('contenidos_2');
-                        contenido.className += "oculto";
-                    }
-                    if ( elemento.id == "enlace_3" ){
-                        var contenido = document.getElementById('contenidos_3');
-                        contenido.className += "oculto";
-                    }
+                    var contenido = document.getElementById(id_parrafo);
+                    contenido.classList.add("oculto");
                 }
 
                 if ( contenido == "Mostrar contenidos" ) {
 
                     elemento.innerHTML = "Ocultar contenidos";
 
-                    if ( elemento.id == "enlace_1" ){
-                        var contenido = document.getElementById('contenidos_1');
-                        contenido.classList.remove("oculto");
-                    }
-                    if ( elemento.id == "enlace_2" ){
-                        var contenido = document.getElementById('contenidos_2');
-                        contenido.classList.remove("oculto");
-                    }
-                    if ( elemento.id == "enlace_3" ){
-                        var contenido = document.getElementById('contenidos_3');
-                        contenido.classList.remove("oculto");
-                    }
+                    var contenido = document.getElementById(id_parrafo);
+                    contenido.classList.remove("oculto");
                 }
             }
         </script>
@@ -56,20 +36,20 @@
             luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis
             pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
         </p>
-        <a id="enlace_1" href="#" onclick="muestraOculta(this)">Ocultar contenidos</a>
+        <a id="enlace_1" href="#" onclick="muestraOculta(this,'contenidos_1')">Ocultar contenidos</a>
         <br />
         <p id="contenidos_2">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et,
             luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis
             pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
         </p>
-        <a id="enlace_2" href="#" onclick="muestraOculta(this)">Ocultar contenidos</a>
+        <a id="enlace_2" href="#" onclick="muestraOculta(this,'contenidos_2')">Ocultar contenidos</a>
         <br />
         <p id="contenidos_3">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et,
             luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis
             pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
         </p>
-        <a id="enlace_3" href="#" onclick="muestraOculta(this)">Ocultar contenidos</a>
+        <a id="enlace_3" href="#" onclick="muestraOculta(this,'contenidos_3')">Ocultar contenidos</a>
     </body>
 </html>
